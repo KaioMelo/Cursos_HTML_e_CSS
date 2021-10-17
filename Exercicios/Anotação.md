@@ -57,6 +57,8 @@
 
 
 
+target="_self" <!--Abrir páginas na msm aba -->
+
 ### Formatação de Texto
 
 #### Negrito / Destaque
@@ -328,6 +330,34 @@ h1{ Seletor
 }
 ```
 
+### Estilos em Linha
+
+
+
+<p>São estilos dentro de cada semântica do html</p>
+
+<!--Evitar usar ao máximo-->
+
+<!--Primeiro na ordem de utilização-->
+
+
+
+### Estilos Internos
+
+
+
+<p>São estilos que ficam fora do corpo do html e dentro da cabeça</p>
+
+<!--Segundo na ordem de utilização-->
+
+### Estilos Externos
+
+
+
+<p>São estilos que ficam fora do arquivo html chamado style.css</p>
+
+<!--Terceiro na ordem de utilização-->
+
 
 
 ## Símbolos
@@ -347,6 +377,8 @@ h1{ Seletor
   &cent;
 
   &Delta;
+
+
 
 ## Emoji
 
