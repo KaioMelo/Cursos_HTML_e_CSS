@@ -358,6 +358,242 @@ h1{ Seletor
 
 <!--Terceiro na ordem de utilização-->
 
+### Cores
+
+---------------
+
+### Fontes
+
+#### Sintaxe
+
+<!--Fontes com mais de 1 nome se usa aspas-->
+
+```
+font-family: 'Times New Roman';
+font-size: 1em;<!--Tamanho-->
+font-weight: normal;
+font-style: italic;
+text-decoration: underline; <!--Sublinhado-->
+
+Lighter(leve), Normal, Bold(negrito), Bolder(ousado) 
+
+Weight(Peso), Width(Largura), Height(Altura)
+```
+
+
+
+#### Uso de Fontes Internas
+
+<!--DaFont-->
+
+```
+@font-face {
+font-family:'Love';
+src: url('fonts/love story.ttf') format(opentype);
+font-weight: normal;
+font-style: normal;
+}
+
+/*
+Tipos de format();
+-opentype(otf)
+-truetype(ttf)
+-embedded-opentype
+-truetype-aat(Apple Advanced Typography)
+- svg
+*/
+
+
+h1{
+font-family: 'Love', Times, serif;
+font-size: 3em;
+font-weight: normal;
+}
+```
+
+
+
+#### Uso de Fontes Externas
+
+<!--Google fonts-->
+
+```
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+h1 {
+
+​font-family: 'Kaushan Script',sans-serif;
+
+​font-size: 3em;
+
+​ }
+```
+
+#### Medidas
+
+##### Medidas Absolutas
+
+<ul>
+    <li>cm</li>
+    <li>mm</li>
+    <li>in(polegadas)</li>
+    <li>px</li>
+    <li>pt</li>
+    <li>pc</li>
+</ul>
+
+
+##### Medidas Relativas
+
+
+
+<ul>
+    <li>em</li>
+    <li>ex</li>
+    <li>rem</li>
+    <li>vw</li>
+    <li>vh</li>
+    <li>%</li>
+</ul>
+
+
+<!--Recomendação é utilizar 'px' e 'em'-->
+
+#### Shorthand Font
+
+
+
+```
+font-family:'Work Sans', sans-serif;
+font-weight: bolder;
+font-size: 3em;
+font-style: italic;
+```
+
+<!--font-style -> font-weight -> font-size -> font-family-->
+
+```
+font: italic bolder 3em 'Work Sans', Sans-serif;
+```
+
+#### Alinhamento
+
+<!--Center, Justify, left e right-->
+
+```
+text-align: Center;
+text-indent: 30px;<!--Distanciamento do paragrafo-->
+```
+
+### Seletores Personalizados
+
+```
+# = id
+. = classe
+> = children (filho) 
+: = pseudo-class
+:: = pseudo-element
+```
+
+#### ID (#)
+
+h1*#principal*{
+
+  text-align:center;
+
+}
+
+ou
+
+#principal{ <!--Menos usual-->
+
+​	 text-align:center;
+
+}
+
+#### Class (.)
+
+*.especial*{
+
+​     background-color:rgb(255, 110, 110) 
+
+ }
+
+ou
+
+a.especial{ <!--Menos usual-->
+
+​	background-color:rgb(255, 110, 110) 
+
+}
+
+
+
+#### Pseudo-Class (:) 
+
+<!--Seletores que especifica um estado especial do elemento-->
+
+
+
+a*:visited*{  <!--Depois do clique-->
+
+​	color: darkred; 
+
+}
+
+a*:hover*{ <!--Movimentação do mouse-->
+
+​     text-decoration:underline;
+
+​    color: black;
+
+ }
+
+a*:active*{<!--Quando clicar-->
+
+​	color: yellow;
+
+ }
+
+#### Pseudo-Element (::)
+
+<!--Seletor que permite que você estilize uma parte especifica do elemento-->
+
+
+
+ a*::after*{ <!--Depois do elemento-->
+
+​      content: '[Link]';
+
+​      text-decoration:none;
+
+​     font-weight:normal;
+
+​     color: darkgray; 
+
+​    }
+
+#### Children (>)
+
+ div > p{ <!--Paragrafo que esta dentro da Div-->
+
+​      display: none;
+
+​    }
+
+div*:**hover* > p{
+
+​      display: block; 
+
+​      color:white;
+
+​      background-color:red;
+
+​      width:300px;
+
+}
+
+### Modelos de caixas 
 
 
 ## Símbolos
@@ -397,4 +633,12 @@ h1{ Seletor
 Shift + Tab 	<!-- Volta com o código -->
 
 Ctrl + Shift + P 	<!-- Envelopamento -->
+
+
+
+
+
+
+
+
 
